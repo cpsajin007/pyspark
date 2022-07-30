@@ -13,8 +13,9 @@ spark = SparkSession.builder \
         .getOrCreate() 
 
 
-        
+print("hiii");
 df=spark.read.option("multiline","true").json("file:///pysparkdemo/demonew.json")
+
 # df.show()
 # details = df.withColumn("city",sf.explode(sf.col("data.results.user.location.city")))
 # details.show()
